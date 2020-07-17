@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/logoResto"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/restaurantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="15dp"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restauantType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantTitle"
+                    android:layout_alignStart="@+id/restaurantTitle"
+                    android:layout_alignLeft="@+id/restaurantTitle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restauantType"
+                    android:layout_alignStart="@+id/restauantType"
+                    android:layout_alignLeft="@+id/restauantType"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="11dp"
+                    app:srcCompat="@drawable/ic_pin" />
+
+                <TextView
+                    android:id="@+id/pinDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restauantType"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:text="TextView" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restauantType"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pinDistance"
+                    android:layout_toRightOf="@+id/pinDistance" />
+
+                <TextView
+                    android:id="@+id/ratingNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restauantType"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/ratingBar2"
+                    android:layout_toRightOf="@+id/ratingBar2"
+                    android:text="TextView" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="335dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="#F2F2F2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_call" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="335dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F2F2F2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_np_link"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/heures_d_ouvertures"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="#2114140F">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/monday"
+                    android:layout_toLeftOf="@+id/monday"
+                    android:text="@string/lundi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="76dp"
+                    android:layout_marginRight="76dp"
+                    android:text="Fermé" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView14"
+                    android:layout_alignStart="@+id/textView14"
+                    android:layout_alignLeft="@+id/textView14"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/tuesday"
+                    android:layout_toLeftOf="@+id/tuesday"
+                    android:text="@string/mardi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/monday"
+                    android:layout_alignStart="@+id/monday"
+                    android:layout_alignLeft="@+id/monday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Fermé" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/wednesday"
+                    android:layout_toLeftOf="@+id/wednesday"
+                    android:text="Mercredi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tuesday"
+                    android:layout_alignStart="@+id/tuesday"
+                    android:layout_alignLeft="@+id/tuesday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Fermé" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView17"
+                    android:layout_alignStart="@+id/textView17"
+                    android:layout_alignLeft="@+id/textView17"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/thursday"
+                    android:layout_toLeftOf="@+id/thursday"
+                    android:text="Jeudi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wednesday"
+                    android:layout_alignStart="@+id/wednesday"
+                    android:layout_alignLeft="@+id/wednesday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Fermé" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView19"
+                    android:layout_alignStart="@+id/textView19"
+                    android:layout_alignLeft="@+id/textView19"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/friday"
+                    android:layout_toLeftOf="@+id/friday"
+                    android:text="@string/vendredi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thursday"
+                    android:layout_alignStart="@+id/thursday"
+                    android:layout_alignLeft="@+id/thursday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Fermé" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView21"
+                    android:layout_alignStart="@+id/textView21"
+                    android:layout_alignLeft="@+id/textView21"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_toStartOf="@+id/saturday"
+                    android:layout_toLeftOf="@+id/saturday"
+                    android:text="@string/samedi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/friday"
+                    android:layout_alignStart="@+id/friday"
+                    android:layout_alignLeft="@+id/friday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/fermer" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView23"
+                    android:layout_alignStart="@+id/textView23"
+                    android:layout_alignLeft="@+id/textView23"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_toStartOf="@+id/sunday"
+                    android:layout_toLeftOf="@+id/sunday"
+                    android:text="@string/dimanch"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/saturday"
+                    android:layout_alignStart="@+id/saturday"
+                    android:layout_alignLeft="@+id/saturday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/fermer" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lieu"
+                android:textStyle="bold"
+
+                />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView2"
+                android:layout_width="375dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/evaluation"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#A9414141"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>

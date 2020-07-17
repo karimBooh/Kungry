@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kungry</string>
+    <string name="title_map">Map</string>
+    <string name="title_restaurants">Restaurants</string>
+    <string name="title_profile">Profile</string>
+    <string name="google_maps_key">AIzaSyDZfKN8Fswp83y5XgGxmKKLVKHjtsmFDuI</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom</string>
+    <string name="email">Courriel</string>
+    <string name="password">Mot de passe</string>
+    <string name="registration">Inscription</string>
+    <string name="connexion">Connexion</string>
+    <string name="connect">ME CONNECTER</string>
+    <string name="register">M\'INSCRIRE</string>
+    <string name="disconnect">DÉCONNEXION</string>
+    <string name="signup_if_new">Nouveau avec Kungry? <b>M\'inscrire</b></string>
+    <string name="signin_if_old">Déja abonnée? <b>Me connecter</b></string>
+    <string name="heures_d_ouvertures">Heures d\'ouvertures</string>
+    <string name="lundi">Lundi</string>
+    <string name="mardi">Mardi</string>
+    <string name="dimanch">Dimanch</string>
+    <string name="samedi">Samedi</string>
+    <string name="vendredi">Vendredi</string>
+    <string name="lieu">Lieu</string>
+    <string name="evaluation">Evaluation</string>
+    <string name="fermer">Fermé</string>
+    <string name="clientID">STO4WED2NTDDxjLs8ODios5M15HwsrRlydsMa1t0</string>
+    <string name="clientSecret">YOVWGpjSnHd5AYDxGBR2CIB09ZYM1OPJGnH3ijkKwrUMVvwLprUmLf6fxku06ClUKTAEl5AeZN36V9QYBYvTtrLMrtUtXVuXOGWleQGYyApC2a469l36TdlXFqAG1tpK</string>
+</resources>
